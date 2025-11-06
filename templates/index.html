@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Estadísticas de Votación</h1>
+<div class="cards">
+  <div class="card"><h3>Personas que votaron</h3><p class="kpi">{{ totals.members }}</p></div>
+  <div class="card"><h3>Total de votos</h3><p class="kpi">{{ totals.books }}</p></div>
+  <div class="card"><h3>Brawlers votados</h3><p class="kpi">{{ totals.available }}</p></div>
+</div>
+{% endblock %}
+
+
+

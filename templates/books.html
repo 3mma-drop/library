@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Brawlers disponibles</h1>
+<table class="table">
+  <thead><tr><th>ID</th><th>Nombre</th></tr></thead>
+  <tbody>
+    {% for b in books %}
+    <tr><td>{{ b.book_id }}</td><td>{{ b.title }}</td></tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<h2>Agregar Brawler</h2>
+<form method="post" class="form" style="max-width:420px">
+  <label>Nombre <input name="title" required></label>
+  <button class="btn" type="submit">Guardar</button>
+</form>
+{% endblock %}
