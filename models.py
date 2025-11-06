@@ -10,3 +10,6 @@ class Member:  # Usamos Member como votante
     member_id: int
     name: str
     voted_brawler_id: int  # ID del brawler votado
+
+
+    
